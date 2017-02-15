@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GoBus</string>
+    <string name="submit">Get Detail</string>
+    <string name="home_image">homeImage</string>
+    <string name="bus_source">Source</string>
+    <string name="text_divider">:</string>
+    <string name="bus_destination">Destination</string>
+    <string name="bus_starting_time">Starting Time</string>
+    <string name="bus_travel_duration">Traval Duration</string>
+    <string name="bus_fare">Bus Fare</string>
+    <string name="bus_route">Route</string>
+    <string name="bus_type">Bus Type</string>
+    <string name="splash_screen_description">splashScreen</string>
+    <string name="go_bus_text">Dharmapuri</string>
+    <string name="rupees">\u20B9</string>
+</resources>

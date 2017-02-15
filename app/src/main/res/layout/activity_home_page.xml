@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePageActivity"
+    android:background="@color/blackText"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="GoBus"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:contentDescription="@string/home_image"
+                android:src="@drawable/bus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:popupBackground="@color/colorAccent"
+                android:id="@+id/from"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/colorPrimary"
+                app:ms_arrowSize="20dp"
+                app:ms_baseColor="@color/colorPrimary"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/colorAccent"
+                app:ms_floatingLabelColor="@color/colorPrimary"
+                app:ms_floatingLabelText="Source"
+                app:ms_highlightColor="@color/colorPrimary"
+                app:ms_hint="Source"
+                app:ms_hintColor="@color/colorPrimary"
+                app:ms_multiline="false"
+                app:ms_thickness="1dp"
+                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:popupBackground="@color/colorAccent"
+                android:id="@+id/to"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/colorPrimary"
+                app:ms_arrowSize="20dp"
+                app:ms_baseColor="@color/colorPrimary"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/colorAccent"
+                app:ms_floatingLabelColor="@color/colorPrimary"
+                app:ms_floatingLabelText="Destination"
+                app:ms_highlightColor="@color/colorPrimary"
+                app:ms_hint="Destination"
+                app:ms_hintColor="@color/colorPrimary"
+                app:ms_multiline="false"
+                app:ms_thickness="1dp"
+                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/busDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/colorPrimaryDark"
+                fbutton:cornerRadius="10dp"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
